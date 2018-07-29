@@ -1,0 +1,254 @@
+/*
+Theme Name: Storefront-child
+Template: storefront
+*/
+
+@import url('../storefront/style.css');
+
+.container{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.box{
+    background: #26A9E1;
+    margin: 10px;
+    flex: 1;
+    height: 50vh;
+    border-radius: 4px;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s ease-in;
+    cursor: pointer;
+
+}
+.box h1{
+    color: #fff;
+}
+.box p{
+    color: #fff;
+    font-size: small;
+    opacity: 0.7;
+}
+
+.quote{
+    min-width:100% ;
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-navigation ul li a:hover{
+    opacity: 0.5;
+}
+
+
+.box:hover{
+    transform: scale(1.02);
+    flex: 3;
+    opacity: 0.8;
+}
+.box:nth-child(2){
+    background: #F6931E;
+}
+.box:nth-child(3){
+    background: #8BC43F;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.post{
+    min-width: 30%;
+    max-width: 30%;
+    margin: 10px;
+    background: #ddd;
+    flex: 1;
+    padding: 10px;
+
+    background:#fff ;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+.post h2{
+    padding: 3px;
+    color: #26A9E1;
+}
+.post p{
+    padding: 5px;
+}
+.news-text{
+    width: 100%;
+    padding: 10px;
+    margin-top:6vh;
+    margin-left: 3rem;
+}
+.more{
+    padding: 20px;
+    color: #fff;
+    border-radius: 3px;
+    align-content: center;
+    background: #26A9E1;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+
+}
+.site-header{
+    height: 40vh;
+    background: #444;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+.site-header img{
+    margin: auto;
+}
+
+
+.skip-link screen-reader-text a{
+    color: #26A9E1;
+}
+
+
+.price-graphic{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.graphic{
+
+    flex: 1;
+    height: 10vh;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.75);
+    transition: flex 0.5s;
+    transition-timing-function: ease-in;
+    display: table; overflow: hidden;
+
+
+
+}
+.graphic a{
+    display: table-cell; vertical-align: middle;
+    color: #fff;
+    font-size: 2rem;
+}
+.graphic:nth-child(1){
+    background: #26A9E1;
+}
+.graphic:nth-child(2){
+    background: #F6931E;
+}
+
+.graphic:hover{
+    flex:2;
+}
+.button{
+    background: #26A9E1;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 3px;
+}
+.button a{
+    color: #fff;
+}
+.graphic-all{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.graphic-one{
+    flex: 1;
+}
+.menu-item a{
+    color: black;
+}
+.primary-navigation ul:nth-child(1){
+    margin-top: 4vh;
+}
+.menu-item:last-child a{
+    color: #26A9E1;
+    font-weight: lighter;
+}
+
+.primary-navigation ul:nth-child(2) a{
+    color: #fff;
+    margin: 2px;
+    border-radius:3px;
+}
+.primary-navigation ul:nth-child(2) a:hover{
+    color: #000;
+    margin: 2px;
+    border-radius:3px;
+    background: #26A9E1;
+
+}
+.primary-navigation ul:nth-child(2) li  {
+    background: #fff;
+    border-radius: 3px;
+}
+
+.sub-menu li:nth-child(1) a{
+    background: #26A9E1;
+
+}
+.sub-menu li:nth-child(2) a{
+    background: #F6931E;
+
+}
+.sub-menu li:nth-child(3) a{
+    background: #8BC43F;
+
+}
+
+.menu-toggle span{
+    color: #26A9E1;
+}
+.sign-in-box{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.sign-in{
+    color: #26A9E1;
+    font-size: large;
+    transition: 2s ease-out;
+    padding: 10px;
+    min-width: 200px;
+}
+.sign-in:hover{
+    background: #26A9E1;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    flex: 2;
+}
+
+@media (max-width: 700px) {
+    .box {
+        min-width: 100%;
+    }
+    .post{
+        min-height: 20vh;
+        min-width: 100%;
+    }
+}
